@@ -1,0 +1,20 @@
+prefix: "&8[&cTurkeyNW&8] &r"
+
+errors:
+  no-permission: "&cBu komutu kullanmak için yetkiniz yok!"
+  invalid-coupon: "&cGeçersiz veya süresi dolmuş bir kupon kodu girdiniz."
+  already-used: "&cBu kuponu zaten daha önce kullandınız."
+  limit-reached: "&cBu ayki maksimum kupon kullanma limitinize ulaştınız!"
+  inventory-full: "&cEnvanteriniz dolu! Lütfen yer açıp tekrar deneyin."
+  no-usage-found: "&cHerhangi bir kupon kullanımınız bulunamadı."
+
+success:
+  coupon-claimed: "&aKupon başarıyla kullanıldı! Başlangıç eşyalarınız verildi."
+  # Kupon kullanıldıktan hemen sonra oyuncuya verilecek görev bilgilendirmesi
+  reward-reminder-chat: "&eBilgi: &7Sunucuda toplam &a%hours% saat &7aktif kaldığınızda ödülünüz otomatik verilecektir!"
+  reward-reminder-actionbar: "&aÖdülünüzü almak için %hours% saat aktif kalmanız gerekmektedir!"
+
+time:
+  already-claimed: "&aZaten aktiflik ödülünüzü almışsınız!"
+  remaining: "&eÖdülünüzü almanıza kalan süre: &a%hours% saat, %minutes% dakika."
+  completed: "&eSüreniz dolmuş, ödülünüz kısa süre içinde teslim edilecek!"

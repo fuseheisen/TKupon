@@ -1,0 +1,28 @@
+# TKupon Ana Ayar Dosyasi
+
+database:
+  # Seçenekler: MYSQL, MARIADB, SQLITE
+  # Folia sunucularında kesinlikle MYSQL veya MARIADB önerilir.
+  type: "SQLITE"
+  mysql:
+    host: "127.0.0.1"
+    port: "3306"
+    database: "tkupon_db"
+    username: "root"
+    password: "sifre_buraya"
+
+# Bir oyuncu ayda maksimum kaç farklı kupon kullanabilir?
+max-usage-per-month: 2
+
+# Kupon kullanıldıktan sonra oyuncuya verilecek gecikmeli ödüller
+delayed-rewards:
+  # Oyuncunun oyunda aktif geçirmesi gereken süre (Saat cinsinden)
+  required-playtime-hours: 3
+
+  # Süre dolduğunda oyuncuya gösterilecek bildirim
+  messages:
+    chat: "&aTebrikler! Sunucuda 3 saat geçirdin ve VIP ödülün hesabına tanımlandı."
+
+  # Süre dolduğunda KONSOL tarafından çalıştırılacak komutlar. (%player% = oyuncu adı)
+  commands:
+    - "lp user %player% parent addtemp vip 3d accumulate"

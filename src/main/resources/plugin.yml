@@ -1,0 +1,16 @@
+name: TKupon
+version: '1.0'
+main: net.turkeynw.tkupon.TKupon
+api-version: '1.13'
+author: TurkeyNW
+description: Folia uyumlu, optimize yayinci kupon eklentisi.
+
+commands:
+  kupon:
+    description: Ana kupon komutu.
+    aliases: [coupon, tkupon]
+
+permissions:
+  tkupon.admin:
+    description: Kupon yonetim yetkisi
+    default: op
